@@ -251,6 +251,12 @@ button, input, select, textarea {
   width: 100%;
 }
 
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  border-radius: var(--radius-md);
+}
+
 /* Badges / Eyebrows */
 .eyebrow {
   display: inline-block;
@@ -335,24 +341,19 @@ button, input, select, textarea {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: var(--primary-navy);
 }
 
-.logo-icon {
-  width: 38px;
-  height: 38px;
-  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--primary-navy) 100%);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--bg-white);
-  font-weight: 800;
-  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+.logo img {
+  height: 220px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .logo img {
+    height: 38px;
+  }
 }
 
 .nav-links {
@@ -375,6 +376,18 @@ button, input, select, textarea {
 .nav-cta {
   display: flex;
   align-items: center;
+}
+
+.nav-cta .btn {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  gap: 6px;
+  border-radius: var(--radius-sm);
+  box-shadow: none;
+}
+
+.nav-cta .btn:hover {
+  transform: translateY(-1px);
 }
 
 .mobile-menu-btn {
@@ -1099,7 +1112,7 @@ select.form-control {
 
 .timeline-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   position: relative;
   z-index: 2;
@@ -1559,18 +1572,16 @@ select.form-control {
 }
 
 .footer-logo {
-  color: var(--bg-white);
-  font-weight: 800;
-  font-size: 1.35rem;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
 }
 
-.footer-logo .logo-icon {
-  width: 36px;
-  height: 36px;
+.footer-logo img {
+  height: 250px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .footer-text {
@@ -1877,4 +1888,77 @@ select.form-control {
 .fade-in-up.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ==========================================================================
+   CUSTOM IMAGE AND SPLIT LAYOUT ADJUSTMENTS
+   ========================================================================== */
+.sub-eval-block .grid-2 {
+  align-items: center;
+}
+
+.eval-image {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: block;
+  object-fit: cover;
+  max-height: 350px;
+}
+
+.sub-eval-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 20px;
+}
+
+@media (max-width: 992px) {
+  .sub-eval-block .grid-2 {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sub-eval-list-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.why-us-split {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.why-us-image {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-premium);
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  max-height: 480px;
+}
+
+.why-us-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .why-us-split {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .why-us-image {
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-us-list-grid {
+    grid-template-columns: 1fr;
+  }
 }

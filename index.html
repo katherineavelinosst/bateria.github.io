@@ -45,6 +45,7 @@
   src="https://www.facebook.com/tr?id=4255776384565952&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -62,7 +63,11 @@
   <meta property="og:locale" content="es_CO">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563EB'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon_io/favicon.ico">
+  <link rel="manifest" href="assets/favicon_io/site.webmanifest">
 
   <!-- FontAwesome for Premium Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -82,8 +87,7 @@
   <header class="header" id="mainHeader">
     <div class="container navbar">
       <a href="#top" class="logo" id="logoLink">
-        <div class="logo-icon">CP</div>
-        <span>Cumplimiento Psicosocial <span style="color:var(--accent-blue);">Colombia</span></span>
+        <img src="assets/images/logo_horizontal_black.png" alt="Cumplimiento Psicosocial Colombia Logo">
       </a>
       
       <nav class="nav-links">
@@ -112,8 +116,7 @@
   <div class="mobile-nav" id="mobileNav">
     <div class="mobile-nav-header">
       <div class="logo">
-        <div class="logo-icon">CP</div>
-        <span>Cumplimiento Psicosocial</span>
+        <img src="assets/images/logo_horizontal_black.png" alt="Cumplimiento Psicosocial Colombia Logo">
       </div>
       <button class="mobile-nav-close" id="mobileNavClose" aria-label="Cerrar menú">
         <i class="fa-solid fa-xmark"></i>
@@ -124,7 +127,7 @@
       <a href="#normativa" class="mobile-link" onclick="closeMobileMenu()">Normativa Legal</a>
       <a href="#evaluacion" class="mobile-link" onclick="closeMobileMenu()">¿Qué evaluamos?</a>
       <a href="#servicios" class="mobile-link" onclick="closeMobileMenu()">Servicios Corporativos</a>
-      <a href="#metodologia" class="mobile-link" onclick="closeMobileMenu()">Nuestra Metodología</a>
+      <a href="#metodologia" class="mobile-link" onclick="closeMobileMenu()">Metodología de Trabajo</a>
       <a href="#beneficios" class="mobile-link" onclick="closeMobileMenu()">Beneficios</a>
       <a href="#sectores" class="mobile-link" onclick="closeMobileMenu()">Sectores Enfoque</a>
       <a href="#contacto-form" class="mobile-link btn btn-primary" onclick="closeMobileMenu()">
@@ -145,7 +148,7 @@
           <span class="eyebrow"><i class="fa-solid fa-location-dot"></i> Bogotá, Colombia</span>
           <h1>Cumple con la batería de riesgo psicosocial y <span>evita sanciones laborales</span></h1>
           <p class="subtitle">
-            Ayudamos a empresas de 10 a 300 empleados en Bogotá y Colombia a cumplir con la normativa vigente mediante evaluaciones psicosociales claras, rápidas y alineadas con su SG-SST.
+            Acompañamos a empresas en Bogotá y toda Colombia en la gestión del riesgo psicosocial, mediante evaluaciones especializadas, cumplimiento normativo y estrategias alineadas con el SG-SST.
           </p>
 
           <!-- Hero Bullets Grid -->
@@ -172,7 +175,7 @@
             </div>
             <div class="hero-bullet-item">
               <i class="fa-solid fa-circle-check"></i>
-              <span>Para empresas de 10 a 300 colaboradores</span>
+              <span>Diseñado para organizaciones que buscan cumplimiento y bienestar laboral.</span>
             </div>
           </div>
 
@@ -211,7 +214,7 @@
         <div class="hero-right" id="contacto-form">
           <div class="hero-form-card card-glass">
             <h3>Solicita un diagnóstico inicial</h3>
-            <p class="form-desc">Déjanos tus datos y un especialista corporativo te contactará hoy mismo.</p>
+            <p class="form-desc">Ingrese los datos de contacto y un especialista brindará atención hoy mismo.</p>
             
             <form id="leadForm" novalidate>
               <!-- Hidden elements for FormSubmit configuration -->
@@ -239,7 +242,7 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="formEmployees" class="form-label">Nro. de Empleados</label>
-                  <input type="number" id="formEmployees" name="Numero_de_empleados" class="form-control" placeholder="10 a 300" min="1" required>
+                  <input type="number" id="formEmployees" name="Numero_de_empleados" class="form-control" placeholder="Ej. 25" min="1" required>
                 </div>
                 <div class="form-group">
                   <label for="formPhone" class="form-label">Teléfono / Celular</label>
@@ -253,7 +256,7 @@
               </div>
 
               <div class="form-group">
-                <label for="formNeeds" class="form-label">¿Qué necesita tu empresa?</label>
+                <label for="formNeeds" class="form-label">¿Qué requiere la organización?</label>
                 <select id="formNeeds" name="Necesidad" class="form-control" required>
                   <option value="" disabled selected>Seleccione una opción...</option>
                   <option value="Aplicar batería psicosocial">Aplicar batería psicosocial por primera vez</option>
@@ -270,7 +273,7 @@
 
               <div class="form-microcopy">
                 <i class="fa-solid fa-user-shield"></i>
-                <span>Tu información será tratada con confidencialidad absoluta (Habeas Data).</span>
+                <span>La información será tratada con confidencialidad absoluta (Habeas Data).</span>
               </div>
             </form>
           </div>
@@ -287,8 +290,8 @@
     <div class="container">
       <div class="section-header text-center">
         <span class="eyebrow">Diagnóstico Preventivo</span>
-        <h2>¿Tu empresa podría estar en riesgo psicosocial?</h2>
-        <p>Muchas organizaciones presentan señales de alerta operativa y conductual antes de identificar formalmente el problema de riesgo psicosocial.</p>
+        <h2>¿Su empresa presenta indicadores de riesgo psicosocial?</h2>
+        <p>En muchas empresas, factores como el estrés laboral, el ausentismo o la sobrecarga operativa pueden estar asociados a riesgos psicosociales no identificados.</p>
       </div>
 
       <div class="problem-grid">
@@ -359,12 +362,12 @@
       </div>
 
       <div class="problem-footer-text">
-        La mayoría de empresas entre 10 y 300 empleados nunca ha aplicado la batería, la tiene desactualizada o no cuenta con un plan de intervención adecuado.
+        A pesar de que la evaluación de la batería de riesgo psicosocial es obligatoria en Colombia, muchas organizaciones aún no realizan la evaluación, la tienen desactualizada o no cuentan con un plan de intervención alineado con el SG-SST y la normativa vigente. Un estudio empresarial realizado en 2018 reveló que el 76% de las empresas en Colombia no había aplicado la batería de riesgo psicosocial.
       </div>
       
       <div class="text-center">
         <a href="#contacto-form" class="btn btn-primary">
-          <i class="fa-solid fa-chart-line"></i> Agenda una revisión inicial sin costo
+          <i class="fa-solid fa-chart-line"></i> Solicitar una revisión de cumplimiento sin costo
         </a>
       </div>
     </div>
@@ -378,7 +381,7 @@
       <div class="section-header text-center">
         <span class="eyebrow">Marco Normativo Colombiano</span>
         <h2>La normativa laboral exige monitoreo y gestión del riesgo psicosocial</h2>
-        <p>Cumpla a cabalidad las exigencias del Ministerio de Trabajo y proteja legalmente a su empresa.</p>
+        <p>Cumplimiento de las exigencias del Ministerio de Trabajo para blindar legalmente a la organización.</p>
       </div>
 
       <div class="compliance-grid">
@@ -410,7 +413,7 @@
 
       <div class="compliance-footer">
         <i class="fa-solid fa-circle-exclamation" style="font-size:1.25rem;"></i>
-        <span>El incumplimiento de estas normas puede generar requerimientos legales, hallazgos graves y cuantiosas sanciones económicas por parte del Ministerio del Trabajo.</span>
+        <span>El incumplimiento de estas normas puede generar multas y sanciones económicas que oscilan entre 100 y 500 SMLV por parte del Ministerio del Trabajo, además de requerimientos legales y hallazgos graves.</span>
       </div>
     </div>
   </section>
@@ -454,43 +457,50 @@
       </div>
 
       <!-- Sub-bloque "También evaluamos" -->
-      <div class="sub-eval-block">
-        <h4>También analizamos y valoramos técnicamente:</h4>
-        <div class="sub-eval-grid">
-          <div class="sub-eval-item">
-            <i class="fa-solid fa-circle-check"></i>
-            <span>Demandas emocionales</span>
-          </div>
-          <div class="sub-eval-item">
-            <i class="fa-solid fa-circle-check"></i>
-            <span>Carga mental cognitiva</span>
-          </div>
-          <div class="sub-eval-item">
-            <i class="fa-solid fa-circle-check"></i>
-            <span>Liderazgo y relaciones</span>
-          </div>
-          <div class="sub-eval-item">
-            <i class="fa-solid fa-circle-check"></i>
-            <span>Claridad de rol y autonomía</span>
-          </div>
-          <div class="sub-eval-item">
-            <i class="fa-solid fa-circle-check"></i>
-            <span>Jornada y tiempos de trabajo</span>
-          </div>
-          <div class="sub-eval-item">
-            <i class="fa-solid fa-circle-check"></i>
-            <span>Reconocimiento y compensación</span>
-          </div>
-          <div class="sub-eval-item">
-            <i class="fa-solid fa-circle-check"></i>
-            <span>Retroalimentación del desempeño</span>
-          </div>
-          <div class="sub-eval-item">
-            <i class="fa-solid fa-circle-check"></i>
-            <span>Estabilidad en el empleo</span>
+        <div class="sub-eval-block">
+          <div class="grid-2">
+            <div class="sub-eval-left">
+              <img src="assets/images/bienestar_laboral.png" alt="Bienestar y Salud Mental Laboral" class="eval-image">
+            </div>
+            <div class="sub-eval-right">
+              <h4 style="text-align: left; margin-bottom: 20px;">También se analiza y valora técnicamente:</h4>
+              <div class="sub-eval-list-grid">
+                <div class="sub-eval-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Demandas emocionales</span>
+                </div>
+                <div class="sub-eval-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Carga mental cognitiva</span>
+                </div>
+                <div class="sub-eval-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Liderazgo y relaciones</span>
+                </div>
+                <div class="sub-eval-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Claridad de rol y autonomía</span>
+                </div>
+                <div class="sub-eval-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Jornada y tiempos de trabajo</span>
+                </div>
+                <div class="sub-eval-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Reconocimiento y compensación</span>
+                </div>
+                <div class="sub-eval-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Retroalimentación del desempeño</span>
+                </div>
+                <div class="sub-eval-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Estabilidad en el empleo</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </div>
   </section>
 
@@ -500,9 +510,9 @@
   <section class="services-section section-padding" id="servicios">
     <div class="container">
       <div class="section-header text-center">
-        <span class="eyebrow">Nuestras Soluciones</span>
+        <span class="eyebrow">Soluciones Psicosociales</span>
         <h2>Soluciones especializadas para empresas</h2>
-        <p>Ofrecemos un portafolio adaptado a las necesidades operativas de pequeñas y medianas organizaciones.</p>
+        <p>Portafolio especializado de consultoría diseñado para la gestión del bienestar laboral y el cumplimiento legal en organizaciones de cualquier sector.</p>
       </div>
 
       <div class="services-grid">
@@ -512,7 +522,7 @@
             <i class="fa-solid fa-paste"></i>
           </div>
           <h4>Aplicación de batería</h4>
-          <p>Evaluación psicométrica completa y rigurosa en modalidad física o digital, alineada 100% a la normativa nacional vigente.</p>
+          <p>Realizamos jornadas de sensibilización para fomentar participación y confianza en los colaboradores, seguidas de la aplicación profesional de la batería de riesgo psicosocial bajo lineamientos del Ministerio de Trabajo y el SG-SST.</p>
         </div>
         <!-- Card 2 -->
         <div class="service-card">
@@ -520,7 +530,7 @@
             <i class="fa-solid fa-chart-pie"></i>
           </div>
           <h4>Informe Técnico</h4>
-          <p>Generación de hallazgos estadísticos y diagnósticos claros y sumamente accionables para la toma de decisiones directivas.</p>
+          <p>Transformamos los resultados en información clara, accionable y fácil de presentar ante auditorías, ARL y entes de control, permitiéndote tomar decisiones preventivas con respaldo técnico y legal.</p>
         </div>
         <!-- Card 3 -->
         <div class="service-card">
@@ -528,7 +538,7 @@
             <i class="fa-solid fa-users-gear"></i>
           </div>
           <h4>Socialización Ejecutiva</h4>
-          <p>Presentación detallada de los resultados a líderes de RRHH y gerencia general para trazar el rumbo preventivo de la empresa.</p>
+          <p>Explicamos los hallazgos de forma sencilla y estratégica a gerencia, talento humano y SST, ayudando a priorizar riesgos, entender el impacto organizacional y definir acciones concretas de mejora.</p>
         </div>
         <!-- Card 4 -->
         <div class="service-card">
@@ -536,7 +546,7 @@
             <i class="fa-solid fa-file-invoice"></i>
           </div>
           <h4>Plan de Intervención</h4>
-          <p>Diseño metodológico de planes de acción prácticos e inmediatos orientados a mitigar los factores críticos detectados.</p>
+          <p>Diseñamos planes de acción prácticos y enfocados en reducir estrés laboral, rotación, agotamiento y conflictos internos, fortaleciendo el cumplimiento normativo y el clima organizacional.</p>
         </div>
         <!-- Card 5 -->
         <div class="service-card">
@@ -544,7 +554,7 @@
             <i class="fa-solid fa-chalkboard-user"></i>
           </div>
           <h4>Capacitaciones Empresariales</h4>
-          <p>Talleres corporativos prácticos enfocados en manejo del estrés, burnout, comunicación asertiva y liderazgo saludable.</p>
+          <p>Desarrollamos talleres experienciales, dinámicos y aplicables para fortalecer la salud mental laboral, prevenir burnout, mejorar liderazgo y promover ambientes de trabajo más saludables y productivos.</p>
         </div>
         <!-- Card 6 -->
         <div class="service-card">
@@ -552,7 +562,7 @@
             <i class="fa-solid fa-handshake-angle"></i>
           </div>
           <h4>Acompañamiento SG-SST</h4>
-          <p>Soporte y consultoría especializada antes, durante y después de la auditoría o revisión por entes de control laboral.</p>
+          <p>Te acompañamos antes, durante y después del proceso con soporte y consultoría especializada, garantizando documentación organizada, cumplimiento normativo y preparación frente a requerimientos del Ministerio de Trabajo o auditorías internas.</p>
         </div>
       </div>
     </div>
@@ -605,7 +615,7 @@
       </div>
 
       <div class="training-footer">
-        *Todos nuestros talleres incluyen metodologías prácticas y dinámicas con entregables de asistencia alineados al SG-SST.
+        *Todos los talleres incluyen metodologías prácticas, dinámicas experienciales, participativas y entregables de asistencia alineados al SG-SST.
       </div>
     </div>
   </section>
@@ -618,9 +628,9 @@
       <div class="section-header text-center">
         <span class="eyebrow">Flujo de Trabajo</span>
         <h2>Un proceso claro, ágil y organizado</h2>
-        <p>Acompañamos a tu empresa de principio a fin, asegurando un proceso sin contratiempos que respeta tus tiempos operativos.</p>
+        <p>Acompañamiento técnico y legal de principio a fin, asegurando un proceso estructurado que respecta los tiempos operativos de su organización.</p>
       </div>
-
+ 
       <div class="timeline-container">
         <div class="timeline-line"></div>
         <div class="timeline-grid">
@@ -628,38 +638,32 @@
           <div class="timeline-node">
             <div class="timeline-number">1</div>
             <h4>Diagnóstico Inicial</h4>
-            <p>Revisamos las necesidades de tu empresa y el estado de tu SG-SST.</p>
+            <p>Revisión de necesidades y estado actual de la empresa.</p>
           </div>
           <!-- Step 2 -->
           <div class="timeline-node">
             <div class="timeline-number">2</div>
-            <h4>Planeación</h4>
-            <p>Programamos y preparamos las jornadas de aplicación presencial o virtual.</p>
+            <h4>Sensibilización y Aplicación de batería</h4>
+            <p>Programamos y preparamos las jornadas de sensibilización y aplicación presencial.</p>
           </div>
           <!-- Step 3 -->
           <div class="timeline-node">
             <div class="timeline-number">3</div>
             <h4>Análisis Técnico</h4>
-            <p>Nuestros psicólogos especialistas evalúan y tabulan las respuestas.</p>
+            <p>Tabulación, procesamiento técnico e interpretación profesional.</p>
           </div>
           <!-- Step 4 -->
           <div class="timeline-node">
             <div class="timeline-number">4</div>
             <h4>Informe</h4>
-            <p>Elaboramos el informe técnico detallando el diagnóstico consolidado.</p>
+            <p>Elaboramos el informe técnico con hallazgos y recomendaciones.</p>
           </div>
           <!-- Step 5 -->
           <div class="timeline-node">
             <div class="timeline-number">5</div>
             <h4>Socialización</h4>
             <p>Presentamos los resultados clave y conclusiones a la dirección.</p>
-          </div>
-          <!-- Step 6 -->
-          <div class="timeline-node">
-            <div class="timeline-number">6</div>
-            <h4>Intervención</h4>
-            <p>Estructuramos el plan anual de intervenciones según los hallazgos.</p>
-          </div>
+            </div>
         </div>
       </div>
 
@@ -676,7 +680,7 @@
     <div class="container">
       <div class="section-header text-center">
         <span class="eyebrow">Retorno de Inversión</span>
-        <h2>Lo que obtiene tu empresa al trabajar con nosotros</h2>
+        <h2>Beneficios clave de la evaluación y diagnóstico psicosocial</h2>
         <p>Implementar correctamente la batería no es solo un trámite legal; transforma positivamente su dinámica organizacional.</p>
       </div>
 
@@ -755,8 +759,8 @@
   <section class="sectors-section section-padding" id="sectores">
     <div class="container">
       <div class="section-header text-center">
-        <span class="eyebrow">Enfoque Industrial</span>
-        <h2>Sectores donde tenemos mayor especialización</h2>
+        <span class="eyebrow">Sectores de Cobertura</span>
+        <h2>Experiencia y adaptación a diversos sectores de la economía</h2>
         <p>Entendemos las dinámicas operativas específicas de cada sector económico en Colombia.</p>
       </div>
 
@@ -860,47 +864,54 @@
   <section class="why-us-section section-padding" id="diferenciadores">
     <div class="container">
       <div class="section-header text-center">
-        <span class="eyebrow">Nuestra Propuesta</span>
+        <span class="eyebrow">Propuesta de Valor</span>
         <h2>¿Por qué elegir Cumplimiento Psicosocial Colombia?</h2>
-        <p>Nos desmarcamos del enfoque exclusivamente clínico o académico tradicional para enfocarnos en soluciones corporativas y prácticas.</p>
+        <p>Enfoque orientado a soluciones corporativas y prácticas, superando el esquema meramente clínico o académico tradicional.</p>
       </div>
 
-      <div class="why-us-grid">
-        <!-- Card 1 -->
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-cubes"></i></div>
-          <h4>Enfoque práctico</h4>
-          <p>No entregamos solo resultados técnicos complejos. Le proporcionamos planes de acción directos, listos para integrarse en sus operaciones diarias.</p>
+      <div class="why-us-split">
+        <div class="why-us-left">
+          <img src="assets/images/consultoria_bienestar.png" alt="Consultoría corporativa y salud mental laboral" class="why-us-image">
         </div>
-        <!-- Card 2 -->
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-bolt"></i></div>
-          <h4>Atención rápida</h4>
-          <p>Sabemos que su tiempo es valioso. Diseñamos procesos ágiles y organizados que minimizan los retrasos y entregan resultados a tiempo.</p>
-        </div>
-        <!-- Card 3 -->
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-briefcase"></i></div>
-          <h4>Orientación empresarial</h4>
-          <p>Hablamos el lenguaje de las empresas. Entendemos de rentabilidad, tiempos, ROI y gestión operativa, alineando la SST al negocio.</p>
-        </div>
-        <!-- Card 4 -->
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-file-circle-check"></i></div>
-          <h4>Diagnósticos accionables</h4>
-          <p>Convertimos las respuestas psicométricas en directrices comprensibles para que la alta gerencia tome decisiones estratégicas informadas.</p>
-        </div>
-        <!-- Card 5 -->
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-arrows-spin"></i></div>
-          <h4>Acompañamiento integral</h4>
-          <p>Le guiamos en todo el ciclo: desde la aplicación técnica por parte de psicólogos especialistas hasta el desarrollo y soporte de las intervenciones.</p>
-        </div>
-        <!-- Card 6 -->
-        <div class="why-card">
-          <div class="why-icon"><i class="fa-solid fa-shield-heart"></i></div>
-          <h4>Enfoque preventivo</h4>
-          <p>Nuestra meta va más allá del papeleo. Ayudamos a construir un ambiente laboral sano que impulsa la productividad y la felicidad del equipo.</p>
+        <div class="why-us-right">
+          <div class="why-us-list-grid">
+            <!-- Card 1 -->
+            <div class="why-card">
+              <div class="why-icon"><i class="fa-solid fa-cubes"></i></div>
+              <h4>Enfoque práctico</h4>
+              <p>El alcance no se limita a entregar un reporte técnico complejo; se diseñan planes de acción prácticos listos para ser implementados en las operaciones diarias.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="why-card">
+              <div class="why-icon"><i class="fa-solid fa-bolt"></i></div>
+              <h4>Atención rápida</h4>
+              <p>Procesos de evaluación ágiles y estructurados, optimizando los tiempos de entrega sin alterar la rutina operativa de la organización.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="why-card">
+              <div class="why-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h4>Orientación empresarial</h4>
+              <p>Alineación total con las necesidades corporativas. Comprensión del negocio, la gestión del talento, el retorno de inversión y la productividad de los equipos.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="why-card">
+              <div class="why-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+              <h4>Diagnósticos accionables</h4>
+              <p>Conversión de datos estadísticos y psicométricos en directrices de gestión comprensibles y estratégicas para la toma de decisiones gerenciales.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="why-card">
+              <div class="why-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+              <h4>Acompañamiento integral</h4>
+              <p>Asesoría en todo el ciclo: desde la aplicación técnica por parte de psicólogos especialistas hasta el diseño de las medidas de intervención.</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="why-card">
+              <div class="why-icon"><i class="fa-solid fa-shield-heart"></i></div>
+              <h4>Enfoque preventivo</h4>
+              <p>El propósito trasciende el cumplimiento formal; se orienta a fomentar un entorno de trabajo saludable que potencie la productividad y la calidad de vida de los colaboradores.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -911,14 +922,14 @@
        ========================================== -->
   <section class="final-cta-section section-padding">
     <div class="container final-cta-container">
-      <h2>¿Tu empresa está preparada para cumplir con la normativa psicosocial?</h2>
-      <p>Agenda una asesoría inicial gratuita de 15 minutos en Bogotá y revisemos el estado actual de tu empresa en el cumplimiento del SG-SST.</p>
+      <h2>¿Su organización está lista para cumplir con la normativa psicosocial?</h2>
+      <p>Agenda una consulta gratuita de 15 minutos y recibe una orientación inicial sobre el estado de cumplimiento normativo y gestión psicosocial de tu organización.</p>
       
       <div class="final-cta-actions">
         <a href="#contacto-form" class="btn btn-primary" style="background-color: var(--bg-white); color: var(--primary-navy); box-shadow: var(--shadow-lg);">
           <i class="fa-solid fa-calendar-check"></i> Solicitar Asesoría
         </a>
-        <a href="https://wa.me/573102631462?text=Hola,%20quisiera%20agendar%20una%20asesor%C3%ADa%20inicial%20gratuita%20para%20el%20diagn%C3%B3stico%20de%20riesgo%20psicosocial." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/573102631462?text=Hola,%20solicito%20informaci%C3%B3n%20sobre%20la%20bater%C3%ADa%20de%20riesgo%20psicosocial%20para%20mi%20empresa." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-whatsapp" style="font-size:1.25rem;"></i> Hablar por WhatsApp
         </a>
       </div>
@@ -948,8 +959,7 @@
       <div class="footer-top">
         <div>
           <div class="footer-logo">
-            <div class="logo-icon">CP</div>
-            <span>Cumplimiento Psicosocial <span style="color:var(--accent-sky);">Colombia</span></span>
+            <img src="assets/images/logo_horizontal_white.png" alt="Cumplimiento Psicosocial Colombia Logo">
           </div>
           <p class="footer-text">
             Consultoría especializada en evaluaciones psicosociales, capacitaciones organizacionales de bienestar y soluciones de cumplimiento para el SG-SST en Bogotá y a nivel nacional.
@@ -973,10 +983,6 @@
               <span>Bogotá D.C., Colombia</span>
             </div>
             <div class="footer-contact-item">
-              <i class="fa-solid fa-envelope"></i>
-              <a href="mailto:katherineavelinosst@gmail.com">katherineavelinosst@gmail.com</a>
-            </div>
-            <div class="footer-contact-item">
               <i class="fa-solid fa-phone"></i>
               <a href="tel:+573102631462">(+57) 310 263 1462</a>
             </div>
@@ -998,7 +1004,7 @@
        FLOATING / STICKY CONTROLS
        ========================================== -->
   <!-- WhatsApp Floating Icon -->
-  <a href="https://wa.me/573102631462?text=Hola,%20vengo%20de%20la%20p%C3%A1gina%20web%20y%20quisiera%20hacer%20una%20consulta%20r%C3%A1pida." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp" id="floatingWhatsapp">
+  <a href="https://wa.me/573102631462?text=Hola,%20deseo%20realizar%20una%20consulta%20sobre%20la%20bater%C3%ADa%20de%20riesgo%20psicosocial." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp" id="floatingWhatsapp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
